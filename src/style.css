@@ -22,6 +22,15 @@
   width: 50%;
 }
 
+/* .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.Card {
+    border: solid purple;
+}
+
 .stats {
   border: solid blue;
   height: 100%;

@@ -5,10 +5,12 @@ import PokemonStats from "../compondents/PokemonStats";
 
 function Main() {
   const [data, setData] = useState([]);
-  // const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon");
+  const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon");
+  const [next, setNext] = useState();
+  const [prev, setPrev] = useState();
 
   const getData = async () => {
-    const response = await axios.get("https://pokeapi.co/api/v2/pokemon");
+    const response = await axios.get(url);
     const data = response.data.results;
     console.log(data);
     setData(data);
@@ -21,7 +23,7 @@ function Main() {
   return (
     <div className="Main">
       <div className="listItems">
-        <Card />
+        <Card data={data} />
         <div className="page">
           <button>Previous</button>
           <button>Next</button>
