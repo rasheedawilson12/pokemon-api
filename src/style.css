@@ -1,0 +1,23 @@
+.navbar {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selectType {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.Main {
+  border: solid black;
+  height: 500px;
+}
+
+.List {
+  display: flex;
+  border: solid red;
+  height: 100%;
+  width: 50%;
+}
