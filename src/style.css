@@ -11,13 +11,19 @@
 }
 
 .Main {
+  display: flex;
   border: solid black;
   height: 500px;
 }
 
-.List {
-  display: flex;
+.listItems {
   border: solid red;
+  height: 100%;
+  width: 50%;
+}
+
+.stats {
+  border: solid blue;
   height: 100%;
   width: 50%;
 }

@@ -1,10 +1,13 @@
 import React from "react";
-import List from "../compondents/List";
+import Card from "../compondents/Card";
 
 function Main() {
   return (
     <div className="Main">
-      <List />
+      <div className="listItems">
+        <Card />
+      </div>
+      <div className="stats"></div>
     </div>
   );
 }
