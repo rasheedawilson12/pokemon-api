@@ -24,6 +24,7 @@ function Main() {
       const data = await axios.get(pokeData.url);
       setData((state) => {
         state = [...state, data.data];
+        state.sort((a, b) => (a.id > b.id ? 1 : -1));
         return state;
       });
     });
