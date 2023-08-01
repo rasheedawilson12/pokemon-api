@@ -51,7 +51,8 @@ function Main() {
       <div className="listItems">
         <Card data={data} pokemonInfo={(pokemon) => setPokeDex(pokemon)} />
         <div className="page">
-          
+          <button>Previous</button>
+          <button>Next</button>
         </div>
       </div>
       <div className="stats">
