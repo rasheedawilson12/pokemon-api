@@ -4,9 +4,15 @@ function Card(props) {
   return (
     <div className="cardContainer">
       {console.log(props.data)}
-      {/* {props.data.map((pokemon) => {
-        return <h2>{pokemon.id}</h2>;
-      })} */}
+      {props.data.map((pokemon) => {
+        return (
+          <div>
+            <h2>{pokemon.id}</h2>
+            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+            <h2>{pokemon.name}</h2>
+          </div>
+        );
+      })}
     </div>
   );
 }
