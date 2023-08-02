@@ -4,9 +4,10 @@ Description
 
 Wireframes
 
-Component Herachy
 
-APU
+Component Hierarachy
+
+API
 
 MVP
 
