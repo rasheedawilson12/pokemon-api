@@ -15,7 +15,11 @@ function Card(props) {
               onClick={() => props.pokemonInfo(pokemon)}
             >
               <h2>{pokemon.id}</h2>
-              <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+              <img
+                src={pokemon.sprites.front_default}
+                alt={pokemon.name}
+                className="cardImg"
+              />
               <h2>{pokemon.name}</h2>
             </div>
           );

@@ -9,6 +9,7 @@ function PokemonStats(props) {
       <img
         src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.data.id}.svg`}
         alt={props.data.name}
+        className="statImg"
       />
       <div className="attacks">
         {props.data.abilities.map((attack) => {
