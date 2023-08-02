@@ -76,16 +76,9 @@
 }
 
 .baseInfo {
-  border: solid blue;
   width: 50%;
 }
 
-ul {
-  list-style: none;
-  text-align: center;
-}
-
 .base-stats {
-  border: solid;
   width: 50%;
 }

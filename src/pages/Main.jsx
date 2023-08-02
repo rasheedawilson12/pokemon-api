@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../compondents/Card";
 import PokemonStats from "../compondents/PokemonStats";
-import Pagination from "../compondents/Pagination";
 
 function Main() {
   const [data, setData] = useState([]);

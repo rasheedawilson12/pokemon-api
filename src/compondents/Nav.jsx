@@ -4,7 +4,7 @@ function Nav() {
   return (
     <div className="navbar">
       <h1>Pokemon API Pokedex</h1>
-      <select className="selectType">
+      {/* <select className="selectType">
         <option value="">Select a Type</option>
         <option>Normal</option>
         <option>Fire</option>
@@ -26,7 +26,7 @@ function Nav() {
         <option>Fairy</option>
         <option>Shadow</option>
         <option>Unknown</option>
-      </select>
+      </select> */}
     </div>
   );
 }
