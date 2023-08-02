@@ -44,7 +44,15 @@
 }
 
 .stats {
+  text-align: center;
+  text-transform: uppercase;
   border: solid blue;
   height: 100%;
   width: 50%;
+}
+
+.attacks {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
 }
