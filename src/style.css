@@ -17,8 +17,11 @@
 
 .listItems {
   border: solid red;
-  height: 100%;
   width: 50%;
+}
+
+.page {
+  border: solid blue;
 }
 
 .cardContainer {

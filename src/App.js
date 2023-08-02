@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Nav from './compondents/Nav';
-import Main from './pages/Main';
-
+import Nav from "./compondents/Nav";
+import Main from "./pages/Main";
+// import Pagination from Pagination;
 
 function App() {
   return (
     <div>
-        <Nav />
-        <Main />
+      <Nav />
+      <Main />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
