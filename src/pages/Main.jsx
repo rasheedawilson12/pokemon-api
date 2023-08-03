@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../compondents/Card";
 import PokemonStats from "../compondents/PokemonStats";
+// import Pagination from "../compondents/Pagination";
 
 function Main() {
   const [data, setData] = useState([]);
@@ -18,7 +19,7 @@ function Main() {
     // console.log(data);
     // setData(data);
     setNext(response.data.next);
-    setNext(response.data.previous);
+    setPrev(response.data.previous);
     getPokeData(response.data.results);
     setLoading(false);
   };
@@ -38,15 +39,15 @@ function Main() {
     getData();
   }, [url]);
 
-  // const prevPage = () => {
-  //   setData([]);
-  //   setUrl(prev);
-  // };
+  const prevPage = () => {
+    setData([]);
+    setUrl(prev);
+  };
 
-  // const nextPage = () => {
-  //   setData([]);
-  //   setUrl(next);
-  // };
+  const nextPage = () => {
+    setData([]);
+    setUrl(next);
+  };
 
   return (
     <div className="Main">
@@ -56,14 +57,14 @@ function Main() {
           loading={loading}
           pokemonInfo={(pokemon) => setPokeDex(pokemon)}
         />
-        {/* <div className="page">
-          {prev && <button onClick={prevPage}>Prev</button>}
-          {next && <button onClick={nextPage}>Next</button>}
-        </div> */}
       </div>
 
       <div className="stats">
         <PokemonStats data={pokeDex} />
+        <div className="page">
+          <button onClick={prev ? prevPage : null}>Prev</button>
+          <button onClick={next ? nextPage : null}>Next</button>
+        </div>
       </div>
     </div>
   );

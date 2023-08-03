@@ -10,9 +10,21 @@ const AppContextProvider = (props) => {
   const [prev, setPrev] = useState();
   const [pokeDex, setPokeDex] = useState();
 
+  const prevPage = () => {
+    setData([]);
+    setUrl(prev);
+  };
+
+  const nextPage = () => {
+    setData([]);
+    setUrl(next);
+  };
+
   return (
     <AppContext.Provider
       value={{
+        nextPage,
+        prevPage,
         data,
         setData,
         url,
