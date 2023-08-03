@@ -3,7 +3,7 @@ import React from "react";
 function Card(props) {
   return (
     <div className="cardContainer">
-      {console.log(props.data)}
+      {/* {console.log(props.data)} */}
       {props.loading ? (
         <h1>Loading...</h1>
       ) : (
