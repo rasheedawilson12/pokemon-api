@@ -34,10 +34,12 @@ function PokemonStats(props) {
       </div>
       <div className="base-statsContainer">
         <div className="baseInfo">
+          <h2>Pokemon Data</h2>
           <h3>Height: {props.data.height}</h3>
           <h3>Weight: {props.data.weight}</h3>
         </div>
         <div className="base-stats">
+          <h2>Base Stats</h2>
           {props.data.stats.map((stats) => {
             return (
               <div>
