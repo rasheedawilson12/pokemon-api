@@ -7,22 +7,22 @@ function PokemonStats(props) {
     <div className="PokemonStats">
       <div className="cardInfo">
         <h1>{props.data.name}</h1>
-        <div className="typeInfo">
-          <h3>Type(s): </h3>
-          {props.data.types.map((type) => {
-            return (
-              <div>
-                <h3>{type.type.name}</h3>
-              </div>
-            );
-          })}
-        </div>
+        <h3>Type(s): </h3>
+        {props.data.types.map((type) => {
+          return (
+            <div>
+              <h3>{type.type.name}</h3>
+            </div>
+          );
+        })}
       </div>
-      <img
-        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.data.id}.svg`}
-        alt={props.data.name}
-        className="statImg"
-      />
+      <div>
+        <img
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${props.data.id}.svg`}
+          alt={props.data.name}
+          className="statImg"
+        />
+      </div>
       <div className="attacks">
         {props.data.abilities.map((attack) => {
           return (

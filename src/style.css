@@ -1,5 +1,472 @@
 /* ----------------MEDIA QUERIES --------------- */
+/* ----------------DESKTOP --------------------- */
+@media screen and (max-width: 1880px) {
+  body {
+    background-color: lime;
+  }
+  .Main {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 35px;
+    background-color: #ff3334;
+    margin: 15px 25px;
+  }
 
+  .listItems {
+    border-right: 5px solid black;
+    background-color: #ff3334;
+    border-radius: 30px 0 0 30px;
+    width: 65%;
+    padding: 10px;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  button {
+    margin: 8px 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Card {
+    display: flex;
+    border: 2px solid white;
+    background-color: #f6cf57;
+    width: auto;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .Card:hover {
+    cursor: pointer;
+    background-color: cyan;
+  }
+
+  .cardImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .PokemonStats {
+    padding: 10px;
+    background-color: #ff3334;
+    border-radius: 0 30px 30px 0;
+  }
+
+  .attackInfo {
+    border: 2px solid white;
+    background-color: #f6cf57;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px;
+  }
+
+  .cardInfo {
+    display: flex;
+    border: solid black;
+    background-color: #8dc741;
+    justify-content: space-evenly;
+    border-radius: 40px;
+  }
+
+  .typeInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+  }
+
+  .stats {
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    width: 50%;
+  }
+
+  .statImg {
+    width: 300px;
+    height: 300px;
+    border: 8px solid black;
+    background-color: white;
+    margin: 15px auto;
+    padding: 5px;
+  }
+
+  .imageBorder {
+    border: solid black;
+    margin: 30px 95px;
+    background-color: white;
+  }
+
+  .attacks {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .base-statsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #636363;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  .baseInfo {
+    width: 50%;
+    background-color: #8dc741;
+    border-radius: 40px 0 0 40px;
+    margin: 15px 0 15px 15px;
+  }
+
+  .base-stats {
+    width: 50%;
+    background-color: #8dc741;
+    border-radius: 0 40px 40px 0;
+    margin: 15px 0 15px;
+    margin-right: 15px;
+  }
+}
+
+/* ----------------TABLET --------------------- */
+@media screen and (max-width: 1280px) {
+  body {
+    background-color: hotpink;
+  }
+  .Main {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 35px;
+    background-color: #ff3334;
+    margin: 15px 25px;
+  }
+
+  .listItems {
+    border-right: 5px solid black;
+    background-color: #ff3334;
+    border-radius: 30px 0 0 30px;
+    width: 65%;
+    padding: 10px;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  button {
+    margin: 8px 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Card {
+    display: flex;
+    border: 2px solid white;
+    background-color: #f6cf57;
+    width: auto;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .Card:hover {
+    cursor: pointer;
+    background-color: cyan;
+  }
+
+  .cardImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .PokemonStats {
+    padding: 10px;
+    background-color: #ff3334;
+    border-radius: 0 30px 30px 0;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .attackInfo {
+    border: 2px solid white;
+    background-color: #f6cf57;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 16px;
+    width: 60%;
+  }
+
+  .cardInfo {
+    display: block;
+    border: solid black;
+    justify-content: space-evenly;
+    border-radius: 40px;
+  }
+
+  .stats {
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+  }
+
+  .statImg {
+    width: 250px;
+    height: 250px;
+    border: 8px solid black;
+    background-color: white;
+    margin: 15px auto;
+    padding: 5px;
+  }
+
+  .imageBorder {
+    border: solid black;
+    margin: 30px 95px;
+    background-color: white;
+  }
+
+  .attacks {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .base-statsContainer {
+    display: block;
+    background-color: #636363;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .baseInfo {
+    background-color: #8dc741;
+    border-radius: 20px;
+    width: 70%;
+    margin: 5px;
+  }
+
+  .base-stats {
+    background-color: #8dc741;
+    border-radius: 20px;
+    width: 70%;
+    margin: 5px;
+  }
+}
+
+/* ----------------MOBILE --------------------- */
+@media screen and (max-width: 880px) {
+  body {
+    background-color: black;
+  }
+  .typeImgs {
+    display: none;
+    justify-content: space-evenly;
+    margin: 10px 0;
+  }
+  .Main {
+    display: flex;
+    border: 5px solid black;
+    border-radius: 35px;
+    background-color: #ff3334;
+    margin: 15px 25px;
+  }
+
+  .listItems {
+    border-right: 5px solid black;
+    background-color: #ff3334;
+    border-radius: 30px 0 0 30px;
+    width: 65%;
+    padding: 10px;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  button {
+    margin: 8px 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Card {
+    display: flex;
+    border: 2px solid white;
+    background-color: #f6cf57;
+    width: auto;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .Card:hover {
+    cursor: pointer;
+    background-color: cyan;
+  }
+
+  .cardImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .PokemonStats {
+    padding: 10px;
+    background-color: #ff3334;
+    border-radius: 0 30px 30px 0;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .attackInfo {
+    border: 2px solid white;
+    background-color: #f6cf57;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 16px;
+    width: 60%;
+  }
+
+  .cardInfo {
+    display: block;
+    border: solid black;
+    justify-content: space-evenly;
+    border-radius: 40px;
+  }
+
+  .stats {
+    text-align: center;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+  }
+
+  .statImg {
+    width: 250px;
+    height: 250px;
+    border: 8px solid black;
+    background-color: white;
+    margin: 15px auto;
+    padding: 5px;
+  }
+
+  .imageBorder {
+    border: solid black;
+    margin: 30px 95px;
+    background-color: white;
+  }
+
+  .attacks {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .base-statsContainer {
+    display: block;
+    background-color: #636363;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .baseInfo {
+    background-color: #8dc741;
+    border-radius: 20px;
+    width: 70%;
+    margin: 5px;
+  }
+
+  .base-stats {
+    background-color: #8dc741;
+    border-radius: 20px;
+    width: 70%;
+    margin: 5px;
+  }
+}
 
 body {
   margin: 0;
@@ -22,168 +489,6 @@ body {
   margin: 0 20px;
 }
 
-.typeImgs {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10px 0;
-}
-
 .typeImgs img {
   height: 55px;
-}
-
-.selectType {
-  margin: 20px;
-  padding: 10px;
-  border-radius: 25px;
-}
-
-.Main {
-  display: flex;
-  border: 5px solid black;
-  border-radius: 35px;
-  background-color: #ff3334;
-  margin: 15px 25px;
-}
-
-.listItems {
-  border-right: 5px solid black;
-  background-color: #ff3334;
-  border-radius: 30px 0 0 30px;
-  width: 65%;
-  padding: 10px;
-}
-
-.page {
-  text-align: center;
-}
-
-button {
-  margin: 8px 15px;
-  padding: 5px 10px;
-  border-radius: 15px;
-  background-color: white;
-  color: black;
-  border: none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-button:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-
-.cardContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.Card {
-  display: flex;
-  border: 2px solid white;
-  background-color: #f6cf57;
-  width: auto;
-  border-radius: 20px;
-  justify-content: space-evenly;
-  align-items: center;
-  text-transform: uppercase;
-  margin: 5px;
-  padding: 5px;
-}
-
-.Card:hover {
-  cursor: pointer;
-  background-color: cyan;
-}
-
-.cardImg {
-  width: 100px;
-  height: 100px;
-}
-
-.PokemonStats {
-  padding: 10px;
-  background-color: #ff3334;
-  border-radius: 0 30px 30px 0;
-}
-
-.attackInfo {
-  border: 2px solid white;
-  background-color: #f6cf57;
-  border-radius: 20px;
-  padding: 5px 10px;
-  margin: 10px;
-}
-
-.cardInfo {
-  display: flex;
-  border: solid black;
-  background-color: #8dc741;
-  justify-content: space-evenly;
-  border-radius: 40px;
-}
-
-.typeInfo {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 45%;
-}
-
-.stats {
-  text-align: center;
-  text-transform: uppercase;
-  height: 100%;
-  width: 50%;
-}
-
-.statImg {
-  width: 300px;
-  height: 300px;
-  border: 8px solid black;
-  background-color: white;
-  margin: 15px auto;
-  padding: 5px;
-}
-
-.imageBorder {
-  border: solid black;
-  margin: 30px 95px;
-  background-color: white;
-}
-
-.attacks {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-.base-statsContainer {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #636363;
-  text-align: center;
-  border-radius: 15px;
-  width: 100%;
-}
-
-.baseInfo {
-  width: 50%;
-  background-color: #8dc741;
-  border-radius: 40px 0 0 40px;
-  margin: 15px 0 15px 15px;
-}
-
-.base-stats {
-  width: 50%;
-  background-color: #8dc741;
-  border-radius: 0 40px 40px 0;
-  margin: 15px 0 15px;
-  margin-right: 15px;
 }
