@@ -3,7 +3,17 @@ import React from "react";
 function Nav() {
   return (
     <div className="navbar">
-      <h1>Pokemon API Pokedex</h1>
+      <div className="header">
+        <img
+          src="https://www.freeiconspng.com/thumbs/pokeball-png/file-pokeball-png-0.png"
+          alt="pokeball"
+        />
+        <h1>Pokemon API Pokedex</h1>
+        <img
+          src="https://www.freeiconspng.com/thumbs/pokeball-png/file-pokeball-png-0.png"
+          alt="pokeball"
+        />
+      </div>
       <div className="typeImgs">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Pok%C3%A9mon_Normal_Type_Icon.svg/512px-Pok%C3%A9mon_Normal_Type_Icon.svg.png?20230404224439"
