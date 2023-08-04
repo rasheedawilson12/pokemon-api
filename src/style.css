@@ -1,9 +1,6 @@
 /* ----------------MEDIA QUERIES --------------- */
 /* ----------------DESKTOP --------------------- */
 @media screen and (max-width: 1880px) {
-  body {
-    background-color: lime;
-  }
   .Main {
     display: flex;
     border: 5px solid black;
@@ -97,8 +94,9 @@
 
   .typeInfo {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    margin: 5px;
     width: 45%;
   }
 
@@ -157,9 +155,6 @@
 
 /* ----------------TABLET --------------------- */
 @media screen and (max-width: 1280px) {
-  body {
-    background-color: hotpink;
-  }
   .Main {
     display: flex;
     border: 5px solid black;
@@ -174,6 +169,8 @@
     border-radius: 30px 0 0 30px;
     width: 65%;
     padding: 10px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .page {
@@ -242,7 +239,7 @@
     border: 2px solid white;
     background-color: #f6cf57;
     border-radius: 20px;
-    margin: 5px;
+    margin: 5px auto;
     font-size: 16px;
     width: 60%;
   }
@@ -252,6 +249,15 @@
     border: solid black;
     justify-content: space-evenly;
     border-radius: 40px;
+    margin: 0 auto;
+  }
+
+  .typeInfo {
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .stats {
@@ -262,8 +268,8 @@
   }
 
   .statImg {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border: 8px solid black;
     background-color: white;
     margin: 15px auto;
@@ -288,6 +294,7 @@
   .base-statsContainer {
     display: block;
     background-color: #636363;
+    align-content: center;
     text-align: center;
     margin: 0 auto;
     border-radius: 15px;
@@ -298,22 +305,21 @@
     background-color: #8dc741;
     border-radius: 20px;
     width: 70%;
-    margin: 5px;
+    margin: 8px auto;
+    padding: 5px;
   }
 
   .base-stats {
     background-color: #8dc741;
     border-radius: 20px;
     width: 70%;
-    margin: 5px;
+    margin: 8px auto;
+    padding: 5px;
   }
 }
 
 /* ----------------MOBILE --------------------- */
 @media screen and (max-width: 880px) {
-  body {
-    background-color: black;
-  }
   .typeImgs {
     display: none;
     justify-content: space-evenly;
