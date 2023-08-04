@@ -57,14 +57,14 @@ function Main() {
           loading={loading}
           pokemonInfo={(pokemon) => setPokeDex(pokemon)}
         />
-      </div>
-
-      <div className="stats">
-        <PokemonStats data={pokeDex} />
         <div className="page">
           <button onClick={prev ? prevPage : null}>Prev</button>
           <button onClick={next ? nextPage : null}>Next</button>
         </div>
+      </div>
+
+      <div className="stats">
+        <PokemonStats data={pokeDex} />
       </div>
     </div>
   );
