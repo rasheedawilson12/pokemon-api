@@ -1,6 +1,5 @@
 .navbar {
   text-align: center;
-  display: flex;
   justify-content: space-evenly;
 }
 
@@ -26,7 +25,18 @@
 }
 
 .page {
-  border: solid blue;
+  text-align: center;
+}
+
+button {
+  margin: 8px 15px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: lightslategray;
+  color: #f6cf57;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .cardContainer {
@@ -62,9 +72,9 @@
 
 .PokemonStats {
   padding: 10px;
-  border-left: solid black;
   background-color: #ff3334;
   border-radius: 0 30px 30px 0;
+  margin: 150px auto;
 }
 
 .attackInfo {
