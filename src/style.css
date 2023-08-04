@@ -17,7 +17,7 @@
 
 .listItems {
   border: solid red;
-  width: 50%;
+  width: 65%;
   padding: 10px;
 }
 
@@ -26,7 +26,8 @@
 }
 
 .cardContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
@@ -37,7 +38,7 @@
   display: flex;
   border: solid purple;
   background-color: #f6cf57;
-  width: 46%;
+  width: auto;
   border-radius: 20px;
   justify-content: space-evenly;
   align-items: center;
