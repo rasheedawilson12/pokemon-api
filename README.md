@@ -1,22 +1,25 @@
-Title
+![Screenshot 2023-08-04 191427](https://github.com/rasheedawilson12/pokemon-api/assets/72943176/561a72b4-d0e4-4b01-ac2d-abee8355731f)
+
 Pokemon API - PokeDex
 
-Description
 Users will be able to be the best and become Pokemon masters with this PokeDex powered by the PokeAPI! Search through over 1000 Pokemon officially registered in the National PokeDex! Learn types and information about your favorite Pokemon. You can also study base stats and the evolution path for all Pokemon!
 
 Wireframes
 
 The initial wireframe was sketched out on paper of what I wanted to have the PokeDex look like. Eventually I went online and looked for pictures and templates so that I could gain inspirations for colors and designs.
 
-![Alt text](wireFrame-1-1.jpeg)
+![image](https://github.com/rasheedawilson12/pokemon-api/assets/72943176/fc987464-7085-4150-a37b-a18956948b10)
+
 
 I eventually used this picture as my inspiration while putting my own spin and flare to the application.
 
-![Alt text](desktop-wallpaper-pokemon-pokedex-background-1-1.jpg)
+![image](https://github.com/rasheedawilson12/pokemon-api/assets/72943176/a3dac0ab-1d80-40d0-9363-92010622040b)
+
 
 Component Hierarchy
 
-![Alt text](compondentHierarchy-1.jpg)
+![image](https://github.com/rasheedawilson12/pokemon-api/assets/72943176/3870ffb7-b627-4213-afc9-cab5cb835696)
+
 
 • The component hierarchy consists of the required base of the Index.js going down to the App.js.
 • App.js has two children for this project, Main.jsx and Nav.jsx as siblings.
