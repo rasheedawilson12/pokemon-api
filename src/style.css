@@ -477,6 +477,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: papayawhip;
 }
 .navbar {
   text-align: center;
@@ -498,3 +499,11 @@ body {
 .typeImgs img {
   height: 55px;
 }
+
+/* .loader {
+  width: 150px;
+  height: 150px;
+  border-left: 5px solid #38ff83;
+  border-radius: 50%;
+  animation: right 5231 0.9s linear infinite;
+} */

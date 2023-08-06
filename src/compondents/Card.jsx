@@ -5,6 +5,7 @@ function Card(props) {
     <div className="cardContainer">
       {/* {console.log(props.data)} */}
       {props.loading ? (
+        // <div className="loader"></div>
         <h1>Loading...</h1>
       ) : (
         props.data.map((pokemon) => {
